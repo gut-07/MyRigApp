@@ -1,0 +1,20 @@
+CREATE FUNCTION ObtenerCursosAsignadosPorPlataforma (
+    @EmailUsuario VARCHAR(45)
+)
+RETURNS TABLE
+AS
+RETURN (
+    SELECT
+        p.NombrePlataforma,
+        COUNT(d.IdAsignacionCursos) AS NumeroCursosAsignados
+    FROM
+        usuario u
+    JOIN
+        dats d ON u.IdUsuario = d.IdUsuario
+    JOIN
+        plataforma p ON d.IdPlataforma = p.IdPlataforma
+    WHERE
+        u.Email = @EmailUsuario
+    GROUP BY
+        p.NombrePlataforma
+);
