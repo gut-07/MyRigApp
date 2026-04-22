@@ -1,0 +1,852 @@
+Screens:
+  REMITO_1:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
+    Children:
+      - Label1_16:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledFill: =RGBA(255, 191, 0, 1)
+            Fill: =RGBA(102, 102, 102, 1)
+            Font: =Font.'Lato Black'
+            FontWeight: =FontWeight.Bold
+            Height: =69
+            Size: =14
+            Text: |-
+              ="REMITO
+               DE INSTALACIÓN"
+            Width: =640
+      - Rectangle1_19:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(149, 149, 149, 1)
+            BorderThickness: =1
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =86
+            Width: =628
+            X: =6
+            Y: =521
+      - TextRD_19:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =36
+            Size: =13
+            Text: ="ANTENA STARLINK"
+            Width: =253
+            X: =14
+            Y: =535
+      - Borrar_4:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(241, 244, 249, 1)
+            Height: =41
+            Icon: =Icon.Erase
+            OnSelect: =Reset(SelectOP_4) & Reset(SelectRIG_4) & Reset(SelectTIPO_4) & Reset(SelectZONA_4) & Reset(Observaciones_3) & Reset(Adjuntos_2)& Reset(ChkNA_63) & Reset(Status_63) & Reset(ChkNA_64) & Reset(Status_64) & Reset(ChkNA_65) & Reset(Status_65) & Reset(ChkNA_66) & Reset(Status_66) & Reset(ChkNA_67) & Reset(Status_67) & Reset(ChkNA_68) & Reset(Status_68) & Reset(ChkNA_69) & Reset(Status_69) & Reset(ChkNA_70) & Reset(Status_70) & Reset(Status_103) & Reset(ChkNA_103) & Reset(Status_71) & Reset(ChkNA_71) & Reset(Status_72) & Reset(ChkNA_72) & Reset(Status_133) & Reset(ChkNA_133) & Reset(Status_144) & Reset(ChkNA_144) & Reset(Status_73) & Reset(ChkNA_73)& Reset(Status_74) & Reset(ChkNA_74) & Reset(Status_75) & Reset(ChkNA_75)& Reset(Status_76) & Reset(ChkNA_76)& Reset(Status_78) & Reset(ChkNA_78)& Reset(Status_80) & Reset(ChkNA_80)& Reset(Status_83) & Reset (Declaracion_2) & Reset(ChkNA_62) & Reset(Status_62) & Reset (NombrePozo) & Reset (NombreCR) & Reset (PenInput1) & Reset (SelectCLIENTE) & Reset (Adjuntos_3) & Reset (Observaciones_4) & Reset (SelectCto) & Reset(ChkNA_81)& Reset(Status_81) & Reset(Status_84) & Reset(Status_85) & Reset(ChkNA_83) & Reset(ChkNA_87) & Reset (EmailCR)
+            Width: =58
+            X: =88
+            Y: =14
+      - SelectOP_4:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            ChevronBackground: =RGBA(56, 96, 178, 1)
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["OPERADORA"]
+            Font: =Font.'Open Sans'
+            Height: =60
+            HoverFill: =RGBA(186, 202, 226, 1)
+            InputTextPlaceholder: ="Buscar Operadora"
+            Items: =Operadora_1
+            OnChange: =true
+            OnSelect: =true
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 18, 107, 1)
+            SearchFields: =["OPERADORA"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            SelectionFill: =RGBA(56, 96, 178, 1)
+            Size: =18
+            X: =30
+            Y: =75
+      - SelectRIG_4:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            ChevronBackground: =RGBA(56, 96, 178, 1)
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["RIG"]
+            Font: =Font.'Open Sans'
+            Height: =57
+            HoverFill: =RGBA(186, 202, 226, 1)
+            InputTextPlaceholder: ="Buscar Rig"
+            Items: =Rigs_1
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 18, 107, 1)
+            SearchFields: =["RIG"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            SelectionFill: =RGBA(56, 96, 178, 1)
+            Size: =18
+            X: =30
+            Y: =140
+      - LabelEQ_17:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(102, 182, 227, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =54
+            Italic: =true
+            Size: =18
+            Text: ="Equipamiento"
+            Underline: =true
+            Width: =252
+            X: =6
+            Y: =475
+      - Label5_143:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(149, 149, 149, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            Size: =12
+            Text: ="N/A"
+            Width: =56
+            X: =574
+            Y: =519
+      - ChkNA_63:
+          Control: Classic/CheckBox@2.1.0
+          Properties:
+            BorderColor: =RGBA(149, 149, 149, 1)
+            BorderStyle: =BorderStyle.None
+            CheckboxBorderColor: =RGBA(202, 202, 202, 1)
+            CheckmarkFill: =RGBA(0, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HoverColor: =RGBA(0, 18, 107, 1)
+            Text: =""
+            Width: =66
+            X: =568
+            Y: =522
+      - Label5_142:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(149, 149, 149, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =12
+            Text: ="ESTADO"
+            Visible: =ChkNA_63.Value=false
+            Width: =98
+            X: =376
+            Y: =519
+      - Label4_71:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            Height: =28
+            Size: =12
+            Text: ="Verificar conexión y transmisión"
+            Width: =337
+            X: =16
+            Y: =565
+      - Status_63:
+          Control: Classic/Toggle@2.1.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderStyle: =BorderStyle.None
+            Default: |+
+              =true
+            FalseFill: =RGBA(255, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HandleFill: =RGBA(0, 0, 0, 1)
+            Height: =53
+            ShowLabel: =false
+            TrueFill: =RGBA(54, 176, 75, 1)
+            Visible: =ChkNA_63.Value=false
+            Width: =118
+            X: =376
+            Y: =546
+      - Rectangle1_94:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(149, 149, 149, 1)
+            BorderThickness: =1
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =86
+            Width: =628
+            X: =6
+            Y: =609
+      - TextRD_94:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            Size: =15
+            Text: ="SENSOR DE VIENTO"
+            Width: =253
+            X: =14
+            Y: =621
+      - Label5_145:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(149, 149, 149, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            Size: =12
+            Text: ="N/A"
+            Width: =56
+            X: =574
+            Y: =607
+      - ChkNA_64:
+          Control: Classic/CheckBox@2.1.0
+          Properties:
+            BorderColor: =RGBA(149, 149, 149, 1)
+            BorderStyle: =BorderStyle.None
+            CheckboxBorderColor: =RGBA(202, 202, 202, 1)
+            CheckmarkFill: =RGBA(0, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HoverColor: =RGBA(0, 18, 107, 1)
+            Text: =""
+            Width: =66
+            X: =568
+            Y: =610
+      - Label5_144:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(149, 149, 149, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =12
+            Text: ="ESTADO"
+            Visible: =ChkNA_64.Value=false
+            Width: =98
+            X: =376
+            Y: =607
+      - Label4_72:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            Height: =40
+            Size: =12
+            Text: ="Lectura correcta"
+            Width: =281
+            X: =16
+            Y: =647
+      - Status_64:
+          Control: Classic/Toggle@2.1.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderStyle: =BorderStyle.None
+            Default: |+
+              =true
+            FalseFill: =RGBA(255, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HandleFill: =RGBA(0, 0, 0, 1)
+            Height: =53
+            ShowLabel: =false
+            TrueFill: =RGBA(54, 176, 75, 1)
+            Visible: =ChkNA_64.Value=false
+            Width: =118
+            X: =376
+            Y: =634
+      - Rectangle1_95:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(149, 149, 149, 1)
+            BorderThickness: =1
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =86
+            Width: =628
+            X: =6
+            Y: =697
+      - TextRD_95:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            Size: =15
+            Text: ="SENSOR DE PRESION"
+            Width: =253
+            X: =14
+            Y: =709
+      - Label5_147:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(149, 149, 149, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            Size: =12
+            Text: ="N/A"
+            Width: =56
+            X: =574
+            Y: =695
+      - ChkNA_65:
+          Control: Classic/CheckBox@2.1.0
+          Properties:
+            BorderColor: =RGBA(149, 149, 149, 1)
+            BorderStyle: =BorderStyle.None
+            CheckboxBorderColor: =RGBA(202, 202, 202, 1)
+            CheckmarkFill: =RGBA(0, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HoverColor: =RGBA(0, 18, 107, 1)
+            Text: =""
+            Width: =66
+            X: =568
+            Y: =698
+      - Label5_146:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(149, 149, 149, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =12
+            Text: ="ESTADO"
+            Visible: =ChkNA_65.Value=false
+            Width: =98
+            X: =376
+            Y: =695
+      - Label4_73:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            Height: =36
+            Size: =12
+            Text: ="Seteo, puesta a cero"
+            Width: =265
+            X: =16
+            Y: =741
+      - Status_65:
+          Control: Classic/Toggle@2.1.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderStyle: =BorderStyle.None
+            Default: |+
+              =true
+            FalseFill: =RGBA(255, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HandleFill: =RGBA(0, 0, 0, 1)
+            Height: =53
+            ShowLabel: =false
+            TrueFill: =RGBA(54, 176, 75, 1)
+            Visible: =ChkNA_65.Value=false
+            Width: =118
+            X: =376
+            Y: =722
+      - Rectangle1_96:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(149, 149, 149, 1)
+            BorderThickness: =1
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =86
+            Width: =628
+            X: =6
+            Y: =785
+      - TextRD_96:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            Size: =15
+            Text: ="SENSOR DE PESO"
+            Width: =253
+            X: =14
+            Y: =797
+      - Label5_149:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(149, 149, 149, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            Size: =12
+            Text: ="N/A"
+            Width: =56
+            X: =574
+            Y: =783
+      - ChkNA_66:
+          Control: Classic/CheckBox@2.1.0
+          Properties:
+            BorderColor: =RGBA(149, 149, 149, 1)
+            BorderStyle: =BorderStyle.None
+            CheckboxBorderColor: =RGBA(202, 202, 202, 1)
+            CheckmarkFill: =RGBA(0, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HoverColor: =RGBA(0, 18, 107, 1)
+            Text: =""
+            Width: =66
+            X: =568
+            Y: =786
+      - Label5_148:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(149, 149, 149, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =12
+            Text: ="ESTADO"
+            Visible: =ChkNA_66.Value=false
+            Width: =98
+            X: =376
+            Y: =783
+      - Label4_74:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            Height: =40
+            Size: =12
+            Text: ="Calibración y umbral"
+            Width: =281
+            X: =16
+            Y: =823
+      - Status_66:
+          Control: Classic/Toggle@2.1.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderStyle: =BorderStyle.None
+            Default: |+
+              =true
+            FalseFill: =RGBA(255, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HandleFill: =RGBA(0, 0, 0, 1)
+            Height: =53
+            ShowLabel: =false
+            TrueFill: =RGBA(54, 176, 75, 1)
+            Visible: =ChkNA_66.Value=false
+            Width: =118
+            X: =376
+            Y: =810
+      - Rectangle1_97:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(149, 149, 149, 1)
+            BorderThickness: =1
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =86
+            Width: =628
+            X: =6
+            Y: =873
+      - TextRD_97:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            Size: =15
+            Text: ="PROBETAS / RADARES"
+            Width: =253
+            X: =14
+            Y: =885
+      - Label5_151:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(149, 149, 149, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            Size: =12
+            Text: ="N/A"
+            Width: =56
+            X: =574
+            Y: =871
+      - ChkNA_67:
+          Control: Classic/CheckBox@2.1.0
+          Properties:
+            BorderColor: =RGBA(149, 149, 149, 1)
+            BorderStyle: =BorderStyle.None
+            CheckboxBorderColor: =RGBA(202, 202, 202, 1)
+            CheckmarkFill: =RGBA(0, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HoverColor: =RGBA(0, 18, 107, 1)
+            Text: =""
+            Width: =66
+            X: =568
+            Y: =874
+      - Label5_150:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(149, 149, 149, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =12
+            Text: ="ESTADO"
+            Visible: =ChkNA_67.Value=false
+            Width: =98
+            X: =376
+            Y: =871
+      - Label4_75:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            Height: =36
+            Size: =12
+            Text: ="Calibración y lectura correcta"
+            Width: =265
+            X: =16
+            Y: =911
+      - Status_67:
+          Control: Classic/Toggle@2.1.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderStyle: =BorderStyle.None
+            Default: |+
+              =true
+            FalseFill: =RGBA(255, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HandleFill: =RGBA(0, 0, 0, 1)
+            Height: =53
+            ShowLabel: =false
+            TrueFill: =RGBA(54, 176, 75, 1)
+            Visible: =ChkNA_67.Value=false
+            Width: =118
+            X: =376
+            Y: =898
+      - Rectangle1_98:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(149, 149, 149, 1)
+            BorderThickness: =1
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =86
+            Width: =628
+            X: =6
+            Y: =961
+      - TextRD_98:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            Size: =15
+            Text: ="SISTEMA PVT"
+            Width: =253
+            X: =14
+            Y: =973
+      - Label5_153:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(149, 149, 149, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            Size: =12
+            Text: ="N/A"
+            Width: =56
+            X: =574
+            Y: =959
+      - ChkNA_68:
+          Control: Classic/CheckBox@2.1.0
+          Properties:
+            BorderColor: =RGBA(149, 149, 149, 1)
+            BorderStyle: =BorderStyle.None
+            CheckboxBorderColor: =RGBA(202, 202, 202, 1)
+            CheckmarkFill: =RGBA(0, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HoverColor: =RGBA(0, 18, 107, 1)
+            Text: =""
+            Width: =66
+            X: =568
+            Y: =962
+      - Label5_152:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(149, 149, 149, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =12
+            Text: ="ESTADO"
+            Visible: =ChkNA_68.Value=false
+            Width: =98
+            X: =376
+            Y: =959
+      - Label4_76:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            Height: =40
+            Size: =12
+            Text: ="Estado de las alarmas"
+            Width: =281
+            X: =16
+            Y: =999
+      - Status_68:
+          Control: Classic/Toggle@2.1.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderStyle: =BorderStyle.None
+            Default: |+
+              =true
+            FalseFill: =RGBA(255, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HandleFill: =RGBA(0, 0, 0, 1)
+            Height: =53
+            ShowLabel: =false
+            TrueFill: =RGBA(54, 176, 75, 1)
+            Visible: =ChkNA_68.Value=false
+            Width: =118
+            X: =376
+            Y: =986
+      - Icon2_7:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 18, 107, 1)
+            Height: =79
+            Icon: =Icon.NextArrow
+            OnSelect: |+
+              =If(
+                  IsBlank(SelectOP_4.Selected),
+                  Notify("Por favor, seleccionar OPERADORA para poder continuar.", NotificationType.Error)) & If(
+                  IsBlank(SelectRIG_4.Selected),
+                  Notify("Por favor, seleccionar RIG para poder continuar.", NotificationType.Error)) & If(
+                  IsBlank(SelectZONA_4.Selected),
+                  Notify("Por favor, seleccionar TIPO EQ. para poder continuar.", NotificationType.Error)) & If(
+                  IsBlank(SelectTIPO_4.Selected),
+                  Notify("Por favor, seleccionar TIPO DE EQUIPO para poder continuar.", NotificationType.Error)) & If(
+                  IsBlank(SelectCto.Selected),
+                  Notify("Por favor, seleccionar CONTRATO para poder continuar.", NotificationType.Error), 
+                     Navigate(REMITO_2, ScreenTransition.Cover))
+            Width: =98
+            X: =520
+            Y: =1051
+      - Label6_10:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            Text: |-
+              ="1 / 4
+              "
+            Width: =82
+            X: =6
+            Y: =1066
+      - SelectZONA_4:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            ChevronBackground: =RGBA(56, 96, 178, 1)
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["PAÍS"]
+            Font: =Font.'Open Sans'
+            Height: =58
+            HoverFill: =RGBA(186, 202, 226, 1)
+            InputTextPlaceholder: ="Zona"
+            Items: =Zonas_1
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 18, 107, 1)
+            SearchFields: =["PAÍS"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            SelectionFill: =RGBA(56, 96, 178, 1)
+            Size: =18
+            X: =30
+            Y: =269
+      - Icon3_11:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(241, 244, 249, 1)
+            Height: =65
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Home, ScreenTransition.Cover)
+            Width: =55
+            X: =13
+      - LabelEQ_16:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =55
+            Italic: =true
+            Size: =14
+            Text: ="(Estado CORREGIR / BIEN)"
+            Width: =343
+            X: =297
+            Y: =480
+      - SelectTIPO_4:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            ChevronBackground: =RGBA(56, 96, 178, 1)
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["TIPO"]
+            Font: =Font.'Open Sans'
+            Height: =58
+            HoverFill: =RGBA(186, 202, 226, 1)
+            InputTextPlaceholder: ="Tipo de equipo"
+            Items: =Tipo_1
+            OnChange: |-
+              =If(SelectTIPO_4.Selected.TIPO = "PULLING" , UpdateContext({CheckboxValue: true}), UpdateContext({CheckboxValue: false}))
+            OnSelect: |-
+              =If(SelectTIPO_4.Selected.TIPO = "PULLING" , UpdateContext({CheckboxValue: true}), UpdateContext({CheckboxValue: false}))
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 18, 107, 1)
+            SearchFields: =["TIPO"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            SelectionFill: =RGBA(56, 96, 178, 1)
+            Size: =18
+            X: =30
+            Y: =203
+      - NombrePozo:
+          Control: Classic/TextInput@2.3.2
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Clear: =true
+            Color: =RGBA(116, 116, 116, 1)
+            Default: =""
+            EnableSpellCheck: =true
+            Fill: =RGBA(237, 237, 237, 1)
+            Font: =Font.'Open Sans'
+            Height: =55
+            HoverBorderColor: =RGBA(0, 18, 107, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            LineHeight: =2
+            Mode: =TextMode.MultiLine
+            Size: =16
+            Width: =471
+            X: =77
+            Y: =429
+      - LabelEQ_21:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =55
+            Italic: =true
+            Size: =14
+            Text: ="Ingresar nombre del POZO COMPLETO"
+            Width: =392
+            X: =49
+            Y: =388
+      - SelectCto:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            ChevronBackground: =RGBA(56, 96, 178, 1)
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Contrato"]
+            Font: =Font.'Open Sans'
+            Height: =62
+            HoverFill: =RGBA(186, 202, 226, 1)
+            InputTextPlaceholder: ="Contrato"
+            Items: =Contratos_1
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 18, 107, 1)
+            SearchFields: =["Contrato"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            SelectionFill: =RGBA(56, 96, 178, 1)
+            Size: =18
+            X: =30
+            Y: =333
+      - Label3_30:
+          Control: Label@2.5.1
+          Group: Group1_17
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =If(Connection.Connected, Color.GreenYellow, Color.Red)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =43
+            Text: =If(Connection.Connected, "Online", "Offline")
+            Width: =180
+            X: =460
+            Y: =2
+      - Icon4_17:
+          Control: Classic/Icon@2.5.0
+          Group: Group1_17
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 0, 0, 1)
+            DisabledColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =If(Connection.Connected, DisplayMode.Disabled, DisplayMode.View)
+            Height: =61
+            Icon: =Icon.Error
+            Width: =63
+            X: =577
+            Y: =2
+      - Icon5_17:
+          Control: Classic/Icon@2.5.0
+          Group: Group1_17
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(54, 176, 75, 1)
+            DisabledColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =If(Connection.Connected, DisplayMode.View, DisplayMode.Disabled)
+            Height: =48
+            Icon: =Icon.Check
+            Width: =53
+            X: =577
+            Y: =2
