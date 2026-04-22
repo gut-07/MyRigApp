@@ -1,0 +1,358 @@
+Screens:
+  Home:
+    Properties:
+      BackgroundImage: ='Fondo home3'
+      Fill: =RGBA(204, 208, 225, 1)
+      ImagePosition: =ImagePosition.Fill
+      LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
+    Children:
+      - Label2_4:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 18, 107, 1)
+            DisabledColor: =RGBA(204, 208, 225, 1)
+            Fill: =RGBA(2, 151, 188, 0.8)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =81
+            Italic: =true
+            Text: =""
+            Width: =640
+      - Rectangle2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderStyle: =BorderStyle.None
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(116, 116, 116, 0.8)
+            Height: =1136
+            Width: =640
+      - BotonInsSupOp_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderThickness: =0
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(215, 227, 249, 0.7)
+            Font: =Font.Verdana
+            Height: =175
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(255, 191, 0, 1)
+            OnSelect: =Navigate(SUPOP_PERFO_1, ScreenTransition.Cover )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =RGBA(255, 191, 0, 1)
+            Text: ="Estado de Instalación SUP"
+            Width: =265
+            X: =350
+            Y: =237
+      - BotonInsHSE_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderThickness: =0
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(215, 227, 249, 0.7)
+            Font: =Font.Verdana
+            Height: =175
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(152, 208, 70, 1)
+            OnSelect: =Navigate(CKHSE_1, ScreenTransition.Cover)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =RGBA(127, 178, 57, 1)
+            Size: =26
+            Text: ="Check List  QHSE"
+            Width: =265
+            X: =350
+            Y: =441
+      - BotonInsSupOp_5:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderThickness: =0
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(215, 227, 249, 0.7)
+            Font: =Font.Verdana
+            Height: =175
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(102, 182, 227, 1)
+            OnSelect: =Navigate(CHECK_FSST_1, ScreenTransition.Cover)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =RGBA(102, 182, 227, 1)
+            Size: =26
+            Text: ="Checklist FSST"
+            Width: =265
+            X: =26
+            Y: =237
+      - Label2_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 18, 107, 1)
+            DisabledColor: =RGBA(204, 208, 225, 1)
+            Fill: =RGBA(2, 151, 188, 0.8)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =81
+            Italic: =true
+            Text: =">> App FieldCheck "
+            Width: =640
+            Y: =1055
+      - Label2_3:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            DisabledColor: =RGBA(204, 208, 225, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =51
+            Italic: =true
+            Text: =User().FullName
+            Width: =382
+            X: =70
+            Y: =30
+      - Label8_1:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            Height: =48
+            Italic: =true
+            Text: ="Bienvenido"
+            Width: =200
+            X: =71
+      - Icon1_2:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(255, 255, 255, 1)
+            Height: =58
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Message
+            OnSelect: =Navigate(FEEDBACK, ScreenTransition.Cover)
+            Width: =90
+            X: =197
+            Y: =1066
+      - Image2_6:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderStyle: =BorderStyle.None
+            Height: =76
+            Image: =User().Image
+            Width: =54
+            X: =11
+      - BotonInsSupOp_6:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderThickness: =0
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(215, 227, 249, 0.7)
+            Font: =Font.Verdana
+            Height: =175
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(149, 149, 149, 1)
+            OnSelect: =Navigate(REMITO_1, ScreenTransition.Cover)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =RGBA(116, 116, 116, 1)
+            Text: ="Remito de Instalación Digital"
+            Width: =265
+            X: =26
+            Y: =441
+      - Label3_14:
+          Control: Label@2.5.1
+          Group: Group1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =If(Connection.Connected, Color.GreenYellow, Color.Red)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =43
+            Text: =If(Connection.Connected, "Online", "Offline")
+            Width: =180
+            X: =457
+      - Icon4_1:
+          Control: Classic/Icon@2.5.0
+          Group: Group1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 0, 0, 1)
+            DisabledColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =If(Connection.Connected, DisplayMode.Disabled, DisplayMode.View)
+            Height: =61
+            Icon: =Icon.Error
+            Width: =63
+            X: =574
+      - Icon5_1:
+          Control: Classic/Icon@2.5.0
+          Group: Group1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(54, 176, 75, 1)
+            DisabledColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =If(Connection.Connected, DisplayMode.View, DisplayMode.Disabled)
+            Height: =48
+            Icon: =Icon.Check
+            Width: =53
+            X: =574
+      - Image1_2:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =238
+            Image: ='TDS Pason Logo motto'
+            Width: =339
+            X: =150
+            Y: =38
+      - Icon6:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =58
+            HoverColor: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.QuestionMark
+            OnSelect: =Navigate(HELP, ScreenTransition.Cover)
+            Width: =80
+            X: =16
+            Y: =1066
+      - Icon7:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =58
+            HoverColor: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.Globe
+            OnSelect: =Navigate(LINK, ScreenTransition.Cover)
+            Width: =73
+            X: =108
+            Y: =1066
+      - BotonInsSupOp_7:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderThickness: =0
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 0.5)
+            DisabledFill: =RGBA(149, 149, 149, 0.8)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(215, 227, 249, 0.7)
+            Font: =Font.Verdana
+            Height: =175
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(175, 191, 224, 1)
+            OnSelect: =Navigate(MENTORES_1, ScreenTransition.Cover)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =RGBA(0, 94, 146, 1)
+            Size: =22
+            Text: ="Validación de conocimiento"
+            Width: =265
+            X: =26
+            Y: =649
+      - BotonInsSupOp_8:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderThickness: =0
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 0.5)
+            DisabledFill: =RGBA(149, 149, 149, 0.8)
+            Fill: =RGBA(215, 227, 249, 0.7)
+            Font: =Font.Verdana
+            Height: =175
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(175, 191, 224, 1)
+            OnSelect: =Navigate(MAP_1, ScreenTransition.Cover)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =RGBA(250, 155, 112, 1)
+            Size: =20
+            Text: ="MAP (mecanismo acción preventiva)"
+            Width: =265
+            X: =350
+            Y: =649
+      - BotonInsSupOp_9:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderThickness: =0
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 0.5)
+            DisabledFill: =RGBA(149, 149, 149, 0.8)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(215, 227, 249, 0.7)
+            Font: =Font.Verdana
+            Height: =175
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(167, 182, 203, 1)
+            OnSelect: =Navigate('ENC SATISFACCION_HOME', ScreenTransition.Cover)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =RGBA(99, 139, 44, 1)
+            Size: =20
+            Text: ="Encuesta de satisfacción"
+            Width: =265
+            X: =26
+            Y: =860
+      - Icon8:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(26, 26, 26, 1)
+            Height: =81
+            Icon: =Icon.Diamond
+            OnSelect: =Navigate(NEWS, ScreenTransition.Cover)
+            Width: =54
+            X: =296
+            Y: =1055
+      - BotonInsSupOp_10:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderThickness: =0
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(215, 227, 249, 0.7)
+            Font: =Font.Verdana
+            Height: =175
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(255, 191, 0, 1)
+            OnSelect: =Navigate(MA_1, ScreenTransition.Cover)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =RGBA(255, 191, 0, 1)
+            Size: =26
+            Text: ="Checklist MUD ANALYZER"
+            Width: =265
+            X: =350
+            Y: =860
